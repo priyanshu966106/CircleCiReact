@@ -27,3 +27,8 @@ jobs:
     steps:
       - checkout
       - run: npm run build
+  deploy:
+    <<: *defaults
+    steps:
+      - checkout
+      - run: npm run tests
